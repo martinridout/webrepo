@@ -1,0 +1,92 @@
+/*--- Avanquest WebEasy Page Style ---*/
+
+
+.cc01               { /* Common */
+	font            : bold 14pt 'Verdana', 'Lucida Grande', Arial, sans-serif;
+	color           : #800000;
+	}
+.cc02               { /* Common */
+	font            : 12pt 'Tahoma', cursive;
+	color           : #000000;
+	}
+.cc03               { /* Common */
+	border          :   0.00pt solid #800000;
+	}
+.cc04               { /* Common */
+	font            : italic 9pt 'Arial', Helvetica, sans-serif;
+	color           : #800000;
+	}
+div#e9              { /* <DIV>Contacts</DIV> */
+	position        : absolute;
+	left            :  33.00pt;
+	top             :  37.50pt;
+	width           :  90.00pt;
+	height          :  17.25pt;
+	}
+div#e8              { /* <DIV>  \<P class="MsoNor... */
+	position        : absolute;
+	left            :  31.50pt;
+	top             :  84.00pt;
+	width           : 361.50pt;
+	height          :  99.00pt;
+	}
+span#e7             { /* contacts_002001004.gif */
+	background      : transparent url(contacts_002001004.gif) no-repeat top left;
+	position        : absolute;
+	left            : 404.25pt;
+	top             :  31.50pt;
+	width           :   0.75pt;
+	height          : 264.00pt;
+	}
+div#e6              { /* Byron Morgan */
+	position        : absolute;
+	left            : 432.75pt;
+	top             : 176.25pt;
+	width           :  63.75pt;
+	height          :  13.50pt;
+	}
+div#e5              { /* Martin Ridout */
+	position        : absolute;
+	left            : 435.75pt;
+	top             :  96.00pt;
+	width           :  62.25pt;
+	height          :  15.75pt;
+	}
+div#e4              { /* Mick Tuite */
+	position        : absolute;
+	left            : 441.00pt;
+	top             : 262.50pt;
+	width           :  45.00pt;
+	height          :  12.75pt;
+	}
+span#e3             { /* contacts_002001003.jpg */
+	background      : transparent url(contacts_002001003.jpg) no-repeat top left;
+	position        : absolute;
+	left            : 429.75pt;
+	top             : 201.75pt;
+	width           :  66.75pt;
+	height          :  53.25pt;
+	}
+span#e2             { /* contacts_002001002.jpg */
+	background      : transparent url(contacts_002001002.jpg) no-repeat top left;
+	position        : absolute;
+	left            : 440.25pt;
+	top             :  37.50pt;
+	width           :  42.75pt;
+	height          :  53.25pt;
+	}
+span#e1             { /* contacts_002001001.jpg */
+	background      : transparent url(contacts_002001001.jpg) no-repeat top left;
+	position        : absolute;
+	left            : 439.50pt;
+	top             : 116.25pt;
+	width           :  45.75pt;
+	height          :  54.00pt;
+	}
+body#page           { /* Page Body */
+	background-color: #bcb494;
+	}
+
+
+
+/*--- EndOfFile ---*/

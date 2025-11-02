@@ -1,0 +1,77 @@
+/*--- Avanquest WebEasy Page Style ---*/
+
+
+.cc01               { /* Common */
+	font            : bold 14pt 'Verdana', 'Lucida Grande', Arial, sans-serif;
+	color           : #800000;
+	}
+.cc02               { /* Common */
+	font            : 12pt 'Tahoma', cursive;
+	color           : #000000;
+	}
+.cc03               { /* Common */
+	border          :   0.00pt solid #800000;
+	}
+.cc04               { /* Common */
+	font            : italic 9pt 'Arial', Helvetica, sans-serif;
+	color           : #800000;
+	}
+div#e7              { /* <DIV>Background</DIV> */
+	position        : absolute;
+	left            :  30.75pt;
+	top             :  10.50pt;
+	width           : 104.25pt;
+	height          :  21.00pt;
+	}
+div#e6              { /* <DIV>  \<P class="MsoNor... */
+	position        : absolute;
+	left            :  31.50pt;
+	top             :  34.50pt;
+	width           : 361.50pt;
+	height          : 254.25pt;
+	}
+span#e5             { /* background001001.gif */
+	background      : transparent url(background001001.gif) no-repeat top left;
+	position        : absolute;
+	left            : 404.25pt;
+	top             :  31.50pt;
+	width           :   0.75pt;
+	height          : 264.00pt;
+	}
+div#e4              { /* Reed Wickner */
+	position        : absolute;
+	left            : 454.50pt;
+	top             : 252.75pt;
+	width           :  63.75pt;
+	height          :  16.50pt;
+	}
+div#e3              { /* Brian Cox */
+	position        : absolute;
+	left            : 437.25pt;
+	top             : 143.25pt;
+	width           :  45.75pt;
+	height          :  13.50pt;
+	}
+span#e2             { /* prion001001.jpg */
+	background      : transparent url(prion001001.jpg) no-repeat top left;
+	position        : absolute;
+	left            : 426.75pt;
+	top             :  53.25pt;
+	width           :  68.25pt;
+	height          :  84.75pt;
+	}
+span#e1             { /* prion001002.jpg */
+	background      : transparent url(prion001002.jpg) no-repeat top left;
+	position        : absolute;
+	left            : 460.50pt;
+	top             : 176.25pt;
+	width           :  48.00pt;
+	height          :  72.00pt;
+	}
+body#page           { /* Page Body */
+	background-color: #bcb494;
+	}
+
+
+
+/*--- EndOfFile ---*/

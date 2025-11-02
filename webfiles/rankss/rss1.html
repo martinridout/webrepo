@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; 
+   charset=utf-8" />
+  <meta name="featureription" content="Martin Ridout workplace links" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Martin Ridout / Original design: Andreas
+   Viklund - http://andreasviklund.com/" />
+  <link rel="stylesheet" type="text/css" href="../../variant-winter.css"
+   media="screen,projection" title="Variant winter" />
+  <title>Ranked set sampling</title>
+</head>
+
+<body>
+<div id="container">
+  <div id="logo">
+  <h1>Martin Ridout</h1>
+  <p>workplace</p>
+</div>
+
+<div id="main">
+  <h2 class="hide">Site menu:</h2>
+  <ul id="navitab">
+	<li><a href="../../index.html">Home</a></li>
+	<li><a class="current" href="../research.html">Research</a></li>
+	<li><a href="../software.html">Software</a></li>
+	<li><a href="../public.html">Publications</a></li>
+	<li><a href="../recent.html">Recent</a></li>
+  </ul>
+
+        <!-- MAIN PAGE CONTENT -->
+
+<hr />
+<hr />
+
+<br>
+<h2>Ranked Set Sampling</h2>
+
+
+<p>
+Ranked set sampling is an alternative to simple random sampling
+that can sometimes offer large improvements in precision. It was 
+originally proposed in connection with estimating herbage yield
+in a paper by G A McIntyre [Ref 1].
+In recent years it has been applied particularly to problems in
+environmental science. Much of the early literature
+is summarised in the monograph by Chen, Bai & Sinha
+[Ref 2]. 
+An <a href="https://onlinelibrary.wiley.com/doi/pdf/10.5402/2012/568385">open 
+access review paper</a> from 2012 lists over 250 references. 
+[Ref 3].
+</p>
+
+<p>
+I first came across this technique many years ago, also in
+connection with estimating herbage yield [Refs 4,5].
+A few years later I became interested in ranked set sampling again,
+after I
+was involved in an evaluation of the method for estimating
+spray deposits on the leaves of fruit trees. This page provides
+a brief description of this work with links to publications and 
+original data.
+</p>
+
+<h2>Estimating spray deposits</h2>
+
+<p>
+The variable of 
+interest here is the spray deposit per unit area of leaf. This
+is moderately time consuming to measure precisely, but if leaves
+are sprayed with a flourescent dye, the resulting deposits can
+be ranked visually under ultraviolet light. An example image is
+shown on the right.
+</p>
+
+<h3>Evaluation study</h3>
+
+<p>
+For our evaluation study we used two different sprayer settings, and
+sampled 125 leaves from each. In the lab, each set of 125 was randomly
+divided into 25 sets of 5. Four different rankers then ranked both
+the upper and the lower leaf surfaces in each set. This was repeated
+with a different randomization, to give a large amount of information
+about ranking errors.
+</p>
+
+<p>
+For this evaluation study, all leaves were measured. To obtain the 
+'true' measurement for each leaf surface, we used an image analysis system to
+obtain a total pixel grey-scale value. This was then divided by
+the leaf area to give a measure of deposit density.
+</p>
+
+<p>
+This study was done with Dr Roy Murray of East Malling Research.
+</p>
+
+<h2>Results</h2>
+
+<p>
+In this study, two factors reduce the potential benefits of ranked 
+set sampling in relation to simple random sampling:
+<p>* the cost of collecting additional leaves and ranking them;</p>
+<p>* errors that arise in the ranking process</p>
+</p>
+
+<p>
+When these factors are taken into account, the relative precision
+of ranked set sampling is estimated to be about 1.5 - in other
+words about 50% more samples would be needed to achieve
+the same precision using ordinary random sampling.
+</p>
+
+<p>
+There was reasonable consistency between the different rankers
+(Kendall's coefficient of concordance was about 0.9) and estimates
+of relative precision were similar for all four rankers. Nor was
+there any great difference in relative precision between the upper 
+and lower leaf surfaces or between the two different sprayer settings.
+A more detailed description of this work was published as a 
+<a href="AABPaper.pdf">conference paper</a>. 
+</p>
+
+<p>
+You can download the <A HREF="rankss.txt">raw data</A> from this study
+as a text file.
+</p>
+
+<p>
+In an 
+<a HREF="Ranking_Errors.pdf">unpublished paper</a> 
+I have used a generalisation of Mallows' model to explore the 
+ranking errors made by the four rankers [Ref 7].
+</p>
+
+<h3>Multiple measurements</h3>
+
+<p>
+A specific problem that arises with spray deposits is the need
+to collect data for both leaf surfaces. Deposits on the two surfaces
+tend to be weakly negatively correlated - if the leaf happens to be
+orientated so that one surface receives a lot of spray, the other
+surface tends to receive a low deposit. 
+</p>
+
+<p>
+If leaves are selected on the basis of their ranking on just one 
+surface, the resulting sample may be very unbalanced with respect 
+to its ranking on the other surface. This leads to a loss of efficiency.
+However, a simple hueristic algorithm, which can be implemented 
+without too much additional effort, ensures that the leaves measured 
+are reasonably balanced with respect to their ranks on both surfaces. 
+</p>
+
+<p>
+I gave a short talk about this work at the very
+enjoyable, SPRUCE Advanced Workshop on <I>Environmental
+Sampling and Monitoring</I> held in
+Estoril, Portugal on 22-24 March 2001. A 
+<a href="multiple.pdf">written version</a> 
+was subsequently published in <i>Environmental & Ecological
+Statistics</i> [Ref 8].
+</p>
+
+<h3>References</h3>
+
+<!-- <P ALIGN="JUSTIFY"> -->
+<p>[1] McIntyre, G.A. (1952) A method for unbiased selective sampling
+using ranked sets. <i>Australian Journal of Agricultural Research</i>,
+<b>3</b>, 385-390.
+[<a href="https://www.tandfonline.com/doi/abs/10.1198/000313005X54180">journal link</a>]
+</p>
+
+<p>[2] Chen, Z., Bai, Z. & Sinha, B.K. (2004) <i>Ranked Set Sampling: Theory
+and Applications</i>. Springer Lecture Notes in Statistics, No. 176.
+</p>
+
+<p>[3] 
+Wolfe, D.A. (2012) 
+Ranked Set Sampling: Its Relevance and Impact on Statistical Inference
+<i>International Scholarly Research Notices</i>, <b>568385</b>.
+[<a href="https://onlinelibrary.wiley.com/doi/pdf/10.5402/2012/568385">pdf</a>]
+</p>
+
+<p>[4] Cobby J.M., Ridout M.S., Bassett P.J. & Large R.V. (1985) 
+An investigation into the use of ranked set sampling on grass 
+and grass-clover swards. <i>Grass and Forage Science</i>, <b>40</b>, 257-263.
+[<a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2494.1985.tb01753.x">journal link</a>]
+</p>
+
+<p>[5] Ridout M.S. & Cobby J.M. (1987) 
+Ranked set sampling with non-random selection of sets and 
+errors in ranking. <i>Applied Statistics</i>, <b>36</b>, 145-152.
+[<a href="https://academic.oup.com/jrsssc/article/36/2/145/6985440">journal link</a>]
+</p>
+
+<p>[6] Murray R.A., Ridout M.S. & Cross J.V. (2000)
+The use of ranked set sampling in spray deposit assessment,
+<i>Aspect of Applied Biology</i>, <b>57</b>, 141-146.
+ [<a href="aabpaper.pdf">pdf</a>]
+</p>
+
+<p>[7] Ridout M.S. (2001) Modelling ranking errors in ranked set sampling
+using a generalisation Mallows phi-model. <i>Unpublished manuscript</i>.
+ [<a href="Ranking_Errors.pdf">pdf</a>]
+</p>
+
+<p>[8] Ridout M.S. (2003) On ranked set sampling for multiple 
+characteristics. <i>Environmental & Ecological Statistics</i>,
+<b>10</b>, 255-262.
+[<a href="multiple.pdf">pdf</a>]
+</p>
+
+<p>[9] Frey, J., Ozturk, O. & Deshpande, V. (2007)
+Nonparametric Tests for Perfect Judgment Rankings.
+<i>Journal of the American Statistical Association</i>, <b>102</b>, 708-717.
+[<a href="https://www.tandfonline.com/doi/abs/10.1198/016214506000001248">journal link</a>]
+</p>
+
+<p>[10] Li, T. & Balakrishnan, N. (2008) 
+Some simple nonparametric methods to test for perfect ranking in ranked set sampling
+<i>Journal of Statistical Planning and Inference</i>, <b>138</b>, 1325-1338.
+[<a href="https://www.sciencedirect.com/science/article/abs/pii/S0378375807002649">journal link</a>]
+</p>
+
+
+</div>
+
+<div id="sidebar">
+
+   <hr />  <hr />     <hr />  <hr /> 
+   <hr />  <hr />     <hr />  <hr /> 
+
+<br><br>
+<h3>Spray deposits</h3>
+
+<p>
+  The image below shows the
+  spray deposit on the upper surface of a leaf of an apple tree. Sets of 5 leaves were
+  ranked visually for ranked set sampling. The upper and lower leaf
+  surfaces were ranked separately.
+<br><br>
+   <img src="LEAF1.JPG" class="aligncenter" width="187"
+    height="117" alt="Spray deposits on a leaf" />
+</p>
+<br><br>
+<p>The spray deposit data, which can be downloaded <a HREF="rankss.txt">here</a>,
+has been used as an example in numerous subsequent papers, e.g. [Refs 9-10].
+
+</div>
+
+
+<div id="footer">
+  <p>Page layout based on a template by <a
+     href="https://andreasviklund.com/about">Andreas Viklund</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+#==============
+# Preliminaries
+#==============
+
+    # -----------------------------------------
+    # Treatment cost example - Example 3.5 from 
+    # Brazzale, Davison and Reid (2007)
+    # -----------------------------------------
+y = c(30, 172, 210, 212, 335, 489, 651, 1263, 1294, 1875,
+      2213, 2998, 4935, 
+      121, 172, 201, 214, 228, 261, 278, 279, 351, 561,
+      622, 694, 848, 853, 1086, 1110, 1243, 2543)
+x = c(rep(1,13), rep(2,18))
+y = y/1000
+
+require(MASS)
+require(nlme)
+source("hessian.txt")
+require(numDeriv)
+
+
+#================================
+ loglik <- function( param, y, x)
+#================================
+{
+        # Log-likelihood for log-normal
+
+    mu1 = param[1]
+    mu2 = param[2]
+    sigma12 = param[3]
+    sigma22 = param[4]
+
+    (13 * log(sigma12) + 18 * log(sigma22) +
+       sum( (log(y[x==1])-mu1)*(log(y[x==1])-mu1)/sigma12 ) +
+       sum( (log(y[x==2])-mu2)*(log(y[x==2])-mu2)/sigma22 ) ) / 2
+}
+
+
+#=============================
+ transfm1 <- function( param) {
+#=============================
+
+#   param[1]/param[2]
+    param[1]+param[3]/2 - param[2] - param[4]/2
+}
+
+#=============================
+ transfm2 <- function( param) {
+#=============================
+
+#   param[1] - param[2]
+    exp(param[1]+param[3]/2) - exp(param[2]+param[4]/2)
+}
+
+
+param = c(-4621829, -7693342, 18655443, 6606971) / 10000000
+
+ 
+truese = matrix( c(0.57113053637223720792, 0.97369054216345122422,
+                   0.97369054216345122422, 0.85508294260693626485), 2, 2)
+
+der1 <- g2(transfm1, param)
+der2 <- g2(transfm2, param)
+dermat = matrix(c(der1,der2), 2, 4, byrow=TRUE)
+corr <- dermat %*% solve(h1(loglik,param,y,x)) %*% t(dermat)
+tmp = (sqrt(diag(corr)))
+err1 = log10( max( abs( tmp - diag(truese)) / diag(truese) ))
+
+der1 <- g2(transfm1, param)
+der2 <- g2(transfm2, param)
+dermat = matrix(c(der1,der2), 2, 4, byrow=TRUE)
+corr <- dermat %*% solve(h2(loglik,param,y,x)) %*% t(dermat)
+tmp = (sqrt(diag(corr)))
+err2 = log10( max( abs( tmp - diag(truese)) / diag(truese) ))
+
+der1 <- g2(transfm1, param)
+der2 <- g2(transfm2, param)
+dermat = matrix(c(der1,der2), 2, 4, byrow=TRUE)
+corr <- dermat %*% solve(h3(loglik,param,y,x)) %*% t(dermat)
+tmp = (sqrt(diag(corr)))
+err3 = log10( max( abs( tmp - diag(truese)) / diag(truese) ))
+
+
+der1 <- g4(transfm1, param)
+der2 <- g4(transfm2, param)
+dermat = matrix(c(der1,der2), 2, 4, byrow=TRUE)
+corr <- dermat %*% solve(h4(loglik,param,y,x)) %*% t(dermat)
+tmp = (sqrt(diag(corr)))
+err4 = log10( max( abs( tmp - diag(truese)) / diag(truese) ))
+
+
+der1 <- g2(transfm1, param)
+der2 <- g2(transfm2, param)
+dermat = matrix(c(der1,der2), 2, 4, byrow=TRUE)
+corr <- dermat %*% solve(hessian(loglik,param,,,y,x)) %*% t(dermat)
+tmp = (sqrt(diag(corr)))
+err5 = log10( max( abs( tmp - diag(truese)) / diag(truese) ))
+
+
+cat(err1,err2,err3,err4,err5,"\n")
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; 
+   charset=utf-8" />
+  <meta name="featureription" content="Martin Ridout workplace links" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Martin Ridout / Original design: Andreas
+   Viklund - http://andreasviklund.com/" />
+  <link rel="stylesheet" type="text/css" href="../../variant-winter.css"
+   media="screen,projection" title="Variant winter" />
+  <title>Martin Ridout workplace links</title>
+</head>
+
+<body>
+<div id="container">
+  <div id="logo">
+  <h1>Martin Ridout</h1>
+  <h2>workplace</h2>
+</div>
+
+<div id="main">
+  <h2 class="hide">Site menu:</h2>
+  <ul id="navitab">
+	<li><a href="../../index.html">Home</a></li>
+	<li><a class="current" href="../research.html">Research</a></li>
+	<li><a href="../software.html">Software</a></li>
+	<li><a href="../public.html">Publications</a></li>
+	<li><a href="../recent.html">Recent</a></li>
+  </ul>
+
+<!-- This part not used
+  <div id="feature">
+  </div>
+-->
+
+        <!-- MAIN PAGE CONTENT -->
+
+<hr />
+<hr />
+<hr />
+<br>
+
+<h2>Modelling fungal colony counts</h2>
+
+<p>
+One way of estimating concentrations of viable fungal spores in
+soil is to mix a measured amount of soil with distilled water,
+pour some of the mix onto agar plates, incubate these for a period
+of time and then count the number of colonies that are
+formed on the plate. When multiplied by an appropriate conversion
+factor, this gives an estimate of the number of colony forming
+units per gram of soil.</p>
+
+<p>In principle, when using this method, the average number of 
+colonies per plate should be proportional to the amount of soil
+per plate. But in practice, it is common to find that the number
+of colonies grows more slowly than linearly when the amount of soil
+is increased. This can occur for various reasons. One possibility
+is that colonies that grow from spores that are close together
+on the plate coalesce and appear as a single colony. Another possibility
+is that some spores are inhibited from growing by chemicals or
+other inhibitory organisms that are present in the soil suspension.
+</p>
+
+<p>Various analyses of colony counts of the organism <i>Verticillium
+dahliae</i>, which causes wilt in many crops, are published in two
+papers described below. Details about the experimental data are given in [Ref 3].
+</p>
+
+<p>The first paper [Ref 1] was written with David Harris, the plant pathologist
+who collected the data.
+It considers various aspects of design and analysis 
+in relation to a particular non-linear model. Whilst this model can
+be derived as an approximate model arising from overlapping colonies,
+the parameter estimates that we obtain are very different to those
+that would be implied by the physical dimensions of the colonies and
+in this application the model is best considered simply as an
+empirical model that provides a good fit to the data.</p>
+
+<p>
+The second paper [Ref 2], joint with 
+<a href="https://www.kcl.ac.uk/people/david-morris">David Morris</a>, 
+presents a model of inhibition in which 
+colonies fail to develop if spores are close to spores of other 
+inhibitory species. The model has three parameters, but a limiting 
+case of the model with only two parameters is shown to be more useful 
+in practice. This latter model, which is a generalized linear model, 
+is fitted to the <i>V. dahliae</i> counts and the model is contrasted 
+with the earlier model.
+
+
+<!-- A 
+<a href="colonyapplet.html">java applet</a> is available to explore
+this model using simulations.
+-->
+
+<h3>References</h3>
+
+<p>
+[1] Ridout M.S. & Harris D.C. (1997) Estimating the concentration of 
+propagules of a plant pathogen from soil dilution plate counts when
+ the response is nonlinear. <i>Applied Statistics</i>, <b>46</b>, 111-121.
+[<a href="https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/1467-9876.00050">journal 
+link</a>]
+</p>
+
+<p>
+[2] Morris D.L. & Ridout M.S. (2005) Models for microbiological colony 
+counts. <i>Journal of Agricultural, Biological & Environmental Statistics</i>,
+<b>10</b>, 158-169.
+[<a href="https://link.springer.com/article/10.1198/108571105X46011">journal
+link</a>]
+</p>
+
+<p>
+[3] Harris, D.C., Yang, J.R. & Ridout M.S. (1993) 
+The detection and estimation of Verticillium dahliae in naturally infested soil
+<i>Plant Pathology</i>,
+<b>42</b>, 238-250.
+[<a href="https://bsppjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-3059.1993.tb01496.x">journal
+link</a>]
+</p>
+
+<p>
+[4] AlMomany, A.M.  (2010)
+Incidence and prevalence of Verticillium wilt of olives in Jordan.
+<i>Jordan Journal of Agricultural Sciences</i>, <b>6</b>, 373-386.
+[<a href="https://www.researchgate.net/publication/272704399_Incidence_and_Prevalence_of_Verticillium_wilt_of_Olives_in_Jordan">researchgate 
+link</a>]
+</p>
+
+
+</div>
+
+
+<div id="sidebar">
+
+      <br><br><br><br><br>
+      <hr />
+	<img src="vdahliae.png" class="aligncenter" width="173"
+       height="250" alt="Verticillium colonies" />
+      <br>
+      <i>Verticillium dahliae</i> colonies growing on agar plates. This image
+      is from [Ref 4]
+
+</div>
+</div>
+
+<div id="footer">
+  <p>Page layout based on a template by <a
+     href="https://andreasviklund.com/about">Andreas Viklund</a></p>
+</div>
+</body>
+</html>

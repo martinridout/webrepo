@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; 
+   charset=utf-8" />
+  <meta name="featureription" content="Martin Ridout workplace links" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Martin Ridout / Original design: Andreas
+   Viklund - http://andreasviklund.com/" />
+  <link rel="stylesheet" type="text/css" href="../../variant-winter.css"
+   media="screen,projection" title="Variant winter" />
+  <title>Zero-inflated Poisson</title>
+</head>
+
+<body>
+<div id="container">
+  <div id="logo">
+  <h1>Martin Ridout</h1>
+  <h2>workplace</h2>
+</div>
+
+<div id="main">
+  <h2 class="hide">Site menu:</h2>
+  <ul id="navitab">
+	<li><a href="../../index.html">Home</a></li>
+	<li><a class="current" href="../research.html">Research</a></li>
+	<li><a href="../software.html">Software</a></li>
+	<li><a href="../public.html">Publications</a></li>
+	<li><a href="../recent.html">Recent</a></li>
+  </ul>
+
+
+        <!-- MAIN PAGE CONTENT -->
+
+<hr />
+<hr />
+
+<br>
+<h2>Zero-inflated models</h2>
+
+<p>Zero-inflated distributions are used to model count 
+data that have many zero counts. For example, the zero-inflated Poisson
+distribution might be used to model count data for which the proportion
+of zero counts is greater than expected on the basis of the mean
+of the non-zero counts.
+</p>
+<p>
+In recent years, there has been considerable interest in regression
+models based on zero-inflated distributions. Much of this interest
+stems from the seminal paper of Lambert [Ref 1], 
+though this type of model appears to have originated in
+the econometrics literature.
+</p>
+<p>
+<a href="https://scholar.google.com/citations?user=syQ2c2YAAAAJ&hl=en">Clarice Demetrio</a>, 
+<a href="https://scholar.google.co.uk/citations?user=jk0FcFsAAAAJ&hl=en">John Hinde</a> and I wrote a <A HREF="ibc_fin.pdf">review paper</A> on models for
+count data with many zeros for the 
+International Biometric Conference, Capetown, December 1998 [Ref 2].
+Although this review was reasonably complete at the time, there is
+a substantial subsequent literature on this topic,
+including one contribution of our own [Ref 3]. Refs [4 and 5] provide 
+a more recent review of this class of models.</p>
+
+<h3>References</h3>
+<p>
+[1] Lambert, D. (1992) Zero-inflated Poisson regression, with an
+application to defects in manufacturing. <I>Technometrics</I>, 34,
+1-14.
+[<a href="https://www.tandfonline.com/doi/abs/10.1080/00401706.1992.10485228">journal
+link</a>]
+<BR>&nbsp;<BR>
+[2] Ridout, M.S., Demetrio, C.G.B. & Hinde, J.P. (1998) Models
+for counts data with many zeros. <I>Proceedings of the XIXth
+International Biometric Conference</I>, Cape Town, Invited Papers,
+pp. 179-192. [<A HREF="ibc_fin.pdf">pdf</A>]
+<BR>&nbsp;<BR>
+[3] Ridout, M.S., Hinde, J.P. & Demetrio, C.G.B. (2001) A 
+score test for testing a zero-inflated Poisson regression model
+against zero-inflated negative binomial alternatives. <I>Biometrics</I>,
+57, 219-223.
+[<a href="http://www.blackwell-synergy.com/doi/abs/10.1111/j.0006-341X.2001.00219.x">journal 
+link</a>]
+<BR>&nbsp;<BR>
+
+[4] Young, D.S., Roemmele, E.S. & Yeh, P. (2022)
+Zero-inflated modeling part I: Traditional zero-inflated count regression models, 
+their applications, and computational tools
+<i>WIREs Computational Statistics</i>, <b>14</b>, e1541.
+[<a href="https://wires.onlinelibrary.wiley.com/doi/epdf/10.1002/wics.1541">pdf 
+</a>]
+<BR>&nbsp;<BR>
+
+[5] Young, D.S., Roemmele, E.S. & Shi, X. (2022)
+Zero-inflated modeling part II: Zero-inflated models for complex data structures.
+<i>WIREs Computational Statistics</i>, <b>14</b>, e1540.
+[<a href="https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wics.1540?af=R">journal 
+link</a>]
+
+</div>
+
+<div id="sidebar">
+   <hr />  <hr /> 
+<br><br><br><br><br>
+   <h3>Zero-inflated Poisson</h3>
+   <p>An example of a zero-inflated Poisson distribution. The random variable
+      X takes the value 0 with probability 1/3. Otherwise, with
+      probability 2/3, it follows a Poisson distribution with 
+      mean 2.5. 
+   </p>
+   <div>
+   <img src="zipois.gif" float="none" width="260"
+    height="201" alt="Zero-inflated Poisson distribution" />
+   </div>
+   <p>The probability Pr(X=0) has two components. The blue part is from the
+      underlying Poisson distribution, the red part is due to zero-inflation.
+   </p>
+
+</div>
+</div>
+
+
+<div id="footer">
+  <p>Page layout based on a template by <a
+     href="https://andreasviklund.com/about">Andreas Viklund</a></p>
+</div>
+</body>
+</html>

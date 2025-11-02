@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="featureription" content="your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name / Original design: Andreas Viklund - http://andreasviklund.com/" />
+	<link rel="stylesheet" type="text/css" href="variant-winter.css" media="screen,projection" title="Variant winter" />
+	<title>Variant Winter v1.0</title>
+</head>
+
+<body>
+<div id="container">
+		<div id="logo">
+		<h1><a href="index.html">Martin Ridout</a></h1>
+		<p>Work pages</p>
+	</div>
+
+	<div id="main">
+		<h2 class="hide">Site menu:</h2>
+		<ul id="navitab">
+			<li><a class="current" href="index.html">Start</a></li>
+			<li><a href="#">Bio</a></li>
+			<li><a href="#">Downloads</a></li>
+			<li><a href="#">Photos</a></li>
+			<li><a href="#">Tour</a></li>
+			<li><a href="#">Interviews</a></li>
+		</ul>
+
+		<div id="feature">
+			<img src="images/sample.jpg" class="alignleft" width="334" height="202" alt="Winter in Jokkmokk, northern Sweden" />
+			<h2>Let there be snow...</h2>
+			<p>February is a cold winter month in Sweden, and there is plenty of snow around. And still several months until spring. But it is also a month when the day gets longer and when the weather can create beautiful days. Variant Winter is a template inspired by the beautiful northern winter...</p>
+			<hr />
+		</div>
+
+		<h2>Technical details</h2>
+		<p>Partially based on the <a href="http://andreasviklund.com/templates/variant-portal/">Variant Portal</a> template (or actually an older and unreleased version of it), I decided to add some more colors and re-build the layout with some improvements and with possibilities to add an own header to the design. Variant Winter has one background image for the body (body-bg.gif) and another for the main content area (content-bg.jpg), and the latter can be edited to give the design a unique touch.</p>
+
+		<h3>What is a free website template?</h3>
+		<p>This is a basic site design that you can use to build your own website, either in HTML/CSS format or by converting the template design into a theme or template for whatever content management system you use. If you like this layout and would like to use it in any way, you are free to do so. You can make any changes you may want to, and there is no cost involved for using this template for commercial projects. All I ask for is that you leave the "Template design by Andreas Viklund" link in the footer of the site.</p>
+	</div>
+
+	<div id="sidebar">
+		<h2>Sample menu</h2>
+		<ul class="sidelink">
+			<li><a href="#">Page one</a></li>
+			<li><a href="#">Page two</a></li>
+			<li><a href="#">Page three</a></li>
+			<li><a href="#">Page four</a></li>
+			<li><a href="#">Subpages</a>
+				<ul>
+					<li><a href="#">Subpage one</a></li>
+					<li><a href="#">Subpage two</a></li>
+				</ul></li>
+			<li><a href="#">Last page</a></li>
+		</ul>
+
+		<h2>Sample links</h2>
+			<ul>
+				<li><a href="http://andreasviklund.com/templates/">More free templates</a></li>
+				<li><a href="http://andreasviklund.com/blog/">Andreas' blog</a></li>
+			</ul>
+	</div>
+</div>
+
+<div id="footer">
+	<p>Copyright &copy; 2011 Your Name &middot; Template design by <a href="http://andreasviklund.com/">Andreas Viklund</a></p>
+</div>
+</body>
+</html>

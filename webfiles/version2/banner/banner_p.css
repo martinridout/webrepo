@@ -1,0 +1,124 @@
+/*--- Avanquest WebEasy Page Style ---*/
+
+
+.cc01               { /* Common */
+	font            : bold 10pt 'Rockwell';
+	color           : #ffffff;
+	}
+.cc02               { /* Common */
+	font            : bold 14pt 'Georgia', Times, Book, serif;
+	text-decoration : underline;
+	color           : #800000;
+	}
+.cc03               { /* Common */
+	border          :   0.00pt solid #800000;
+	clip            : rect(0.00pt,171.75pt,0.75pt,0.00pt);
+	}
+.cc04               { /* Common */
+	font            : bold 20pt 'Tahoma', cursive;
+	color           : #ffffff;
+	}
+span#e13            { /* banner001002.gif */
+	background      : transparent url(banner001002.gif) no-repeat top left;
+	position        : absolute;
+	left            :   0.00pt;
+	top             :   0.00pt;
+	width           : 562.50pt;
+	height          : 128.25pt;
+	}
+div#e12             { /* BACKGROUND */
+	position        : absolute;
+	left            :  55.50pt;
+	top             : 115.00pt;
+	width           :  87.75pt;
+	height          :  13.50pt;
+	}
+div#e11             { /* MODELS */
+	position        : absolute;
+	left            : 140.25pt;
+	top             : 115.00pt;
+	width           :  56.25pt;
+	height          :  13.50pt;
+	}
+div#e10             { /* HOME   */
+	position        : absolute;
+	left            :  10.50pt;
+	top             : 115.00pt;
+	width           :  40.50pt;
+	height          :  13.50pt;
+	}
+div#e9              { /* UNIVERSITY OF KENT */
+	position        : absolute;
+	left            :  16.50pt;
+	top             :  69.00pt;
+	width           : 228.75pt;
+	height          :  53.25pt;
+	}
+span#e8             { /* banner001001.gif */
+	background      : transparent url(banner001001.gif) no-repeat top left;
+	position        : absolute;
+	left            :  17.25pt;
+	top             :  71.25pt;
+	width           : 171.75pt;
+	height          :   0.75pt;
+	}
+div#e7              { /* Stochastic models for ye... */
+	position        : absolute;
+	left            :   6.75pt;
+	top             :   9.00pt;
+	width           : 371.25pt;
+	height          :  24.75pt;
+	}
+div#e6              { /* SOFTWARE */
+	position        : absolute;
+	left            : 198.75pt;
+	top             : 115.00pt;
+	width           :  83.25pt;
+	height          :  24.75pt;
+	}
+div#e5              { /* PUBLICATIONS */
+	position        : absolute;
+	left            : 268.50pt;
+	top             : 115.00pt;
+	width           :  82.50pt;
+	height          :  24.75pt;
+	}
+div#e4              { /* CONTACTS */
+	position        : absolute;
+	left            : 357.00pt;
+	top             : 115.00pt;
+	width           :  66.00pt;
+	height          :  13.50pt;
+	}
+span#e3             { /* big2_2.jpg */
+	background      : transparent url(big2_2.jpg) no-repeat top left;
+	position        : absolute;
+	left            : 405.00pt;
+	top             :  51.00pt;
+	width           :  56.25pt;
+	height          :  56.25pt;
+	}
+span#e2             { /* gfpred4.jpg */
+	background      : transparent url(gfpred4.jpg) no-repeat top left;
+	position        : absolute;
+	left            : 320.00pt;
+	top             :  51.00pt;
+	width           :  56.25pt;
+	height          :  56.25pt;
+	}
+span#e1             { /* psi1_3.jpg */
+	background      : transparent url(psi1_3.jpg) no-repeat top left;
+	position        : absolute;
+	left            : 490.00pt;
+	top             :  51.00pt;
+	width           :  56.25pt;
+	height          :  56.25pt;
+	}
+body#page           { /* Page Body */
+	background-color: #ffffff;
+	background-image: url(back_bus07.gif);
+	}
+
+
+
+/*--- EndOfFile ---*/

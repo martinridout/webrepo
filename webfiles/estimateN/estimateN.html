@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Estimate closed population size</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="Optimizacija Spletnih Strani - Slovenski Webmaster Blog" /><meta name="keywords" content="optimizacija spletnih strani, izdelava spletnih strani, mark" />	
+<link rel="stylesheet" type="text/css" href="../../dark.css" media="screen" />
+</head>
+<body>
+
+<div id="wrap">
+
+<div id="header">
+<h1><a href="http://www.">Martin Ridout</a></h1>
+<h2>Work pages</h2>
+</div>
+
+<div id="topmenu">
+<a href="../../index.htm">Home</a> | 
+<a href="../teach.html">Teaching</a> | 
+<a href="../research.html">Research</a> | 
+<a href="../software.html">Software</a> |
+<a href="../publication.html">Publications</a> |
+<a href="../editor.html">Editorial work</a> |
+<a href="../contact.html">Contact</a> 
+</div>
+
+<div id="right">
+
+<h3>Estimating closed population size from capture-recapture data</h3>
+
+<p>
+This page provides R functions that can be downloaded to fit some
+models of capture heterogeneity to estimate <i>N</i>, the size of a
+closed population, from capture-recapture data. This is joint work
+with <a href="http://www.kent.ac.uk/ims/people/bjtm/index.htm">Byron Morgan</a>.
+</p>
+
+<p>
+In the most general
+model, captures are modelled as a mixture of binomial and beta-binomial
+counts. This generalises the beta-binomial model considered, for example,
+by Dorazio and Royle [Ref 1] and the (two-component form of) finite mixture
+model considered, for example, by Pledger [Ref 2]. Our new model is 
+described in Refs [3] and [4] below, which also provide other references
+to the existing literature.
+</p>
+
+<p>
+There are important issues of identifiability in models of capture
+heterogeneity, see for example [Ref 5]. Our model does not, of course, resolve these
+problems, but it does offer a broad and flexible class of models within which
+to investigate and compare estimates of <i>N</i>.
+</p>
+
+<p>
+A <a href="estimateN.pdf">user guide</a> provides information about
+the software - how to use it and some details about computational methods.
+
+To use the software, you will need to download the file
+<a href="estimateN.r">estimateN.r</a> into a suitable directory
+on your computer. This contains all the functions needed to fit
+the models. Ordinarily, you should not need to look at the R code in this
+file unless
+you want to see the details of what's going on.
+</p><p>Here are a couple of example files that illustrate the use of the 
+software:
+</p>
+<p>
+<a href="example1.r">example1.r</a>
+&nbsp;&nbsp;&nbsp;
+<a href="example2.r">example2.r</a>
+</p>
+<p>All the data sets used in Refs [3] and [4] are in 
+<a href="alldata.txt">this file</a>.
+</p>
+
+<h3>References</h3>
+<p>
+<p>[1] Dorazio, R.M. and Royle, J.A. (2003). Mixture 
+models for estimating the size
+of a closed population when capture rates vary among individuals.
+<i>Biometrics</i>, <b>59</b>, 351-364.
+</p>
+
+
+<p>[2] Pledger, S. (2000). Unified maximum likelihood estimates 
+for closed capture-recapture
+models using mixtures.
+<i>Biometrics</i>, <b>56</b>, 434-442.
+</p>
+
+<p>[3] Morgan, B.J.T. and Ridout, M.S. (2007). A new mixture model for 
+capture heterogeneity. <i>Applied Statistics</i>, to appear.
+</p>
+
+<p>[4] 
+Morgan, B.J.T. and Ridout, M.S. (2007). Estimating <i>N</i>: a robust approach to capture
+heterogeneity. <i>under revision</i>
+</p>
+
+<p>[5] 
+Link, W.A. (2003). Nonindentifiability of population size from capture-recapture data with
+heterogeneous detection probabilities.
+<i>Biometrics</i>, <b>59</b>, 1123-1130.</p>
+
+
+
+
+
+<br><br><p STYLE="font-size:smaller">
+This page last modified 3 August 2007.
+</p>
+</div>
+
+<div id="left">
+<!--<ul>
+<li><a href="http://www.smileyicon.net">Smiley Icons</a></li>
+</ul>-->
+<img vspace=10 height=200 width=144 src="../esquisse-transparent.gif"/>
+<div style="background: #222; text-align: center; margin-top: 15px; color: #eee; height: 30px; line-height: 30px;">
+Design by <a href="http://www.minimalistic-design.net">Minimalistic Design</a> 
+</div>
+</div>
+
+</div>
+</body>
+</html>

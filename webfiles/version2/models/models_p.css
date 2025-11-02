@@ -1,0 +1,43 @@
+/*--- Avanquest WebEasy Page Style ---*/
+
+
+.cc01               { /* Common */
+	font            : bold 14pt 'Verdana', 'Lucida Grande', Arial, sans-serif;
+	color           : #800000;
+	}
+.cc02               { /* Common */
+	font            : 12pt 'Tahoma', cursive;
+	color           : #000000;
+	}
+.cc03               { /* Common */
+	border          :   0.00pt solid #800000;
+	}
+div#e3              { /* <DIV>Models</DIV> */
+	position        : absolute;
+	left            :  29.25pt;
+	top             :  11.25pt;
+	width           :  90.00pt;
+	height          :  17.25pt;
+	}
+div#e2              { /* <DIV><SPAN style="mso-an... */
+	position        : absolute;
+	left            :  30.00pt;
+	top             :  37.50pt;
+	width           : 367.50pt;
+	height          : 286.50pt;
+	}
+span#e1             { /* models001001.gif */
+	background      : transparent url(models001001.gif) no-repeat top left;
+	position        : absolute;
+	left            : 404.25pt;
+	top             :  31.50pt;
+	width           :   0.75pt;
+	height          : 282.00pt;
+	}
+body#page           { /* Page Body */
+	background-color: #bcb494;
+	}
+
+
+
+/*--- EndOfFile ---*/

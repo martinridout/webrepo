@@ -1,0 +1,61 @@
+/*--- Avanquest WebEasy Page Style ---*/
+
+
+.cc01               { /* Common */
+	font            : bold 14pt 'Verdana', 'Lucida Grande', Arial, sans-serif;
+	color           : #800000;
+	}
+.cc02               { /* Common */
+	border          :   0.00pt solid #800000;
+	}
+.cc03               { /* Common */
+	font            : 11pt 'Tahoma', cursive;
+	color           : #000000;
+	}
+.cc04               { /* Common */
+	font            : 12pt 'Arial', Helvetica, sans-serif;
+	color           : #000000;
+	}
+div#e5              { /* <DIV>Publications</DIV> */
+	position        : absolute;
+	left            :  15.75pt;
+	top             :  12.75pt;
+	width           : 102.75pt;
+	height          :  18.75pt;
+	}
+span#e4             { /* publications001001.gif */
+	background      : transparent url(publications001001.gif) no-repeat top left;
+	position        : absolute;
+	left            : 404.25pt;
+	top             :  31.50pt;
+	width           :   0.75pt;
+	height          : 264.00pt;
+	}
+div#e3              { /* Journal link   */
+	position        : absolute;
+	left            : 420.00pt;
+	top             :  43.50pt;
+	width           :  66.00pt;
+	height          :  16.50pt;
+	}
+div#e2              { /* Journal link   */
+	position        : absolute;
+	left            : 418.50pt;
+	top             :  95.25pt;
+	width           :  72.00pt;
+	height          :  16.50pt;
+	}
+div#e1              { /* <DIV><SPAN style="mso-an... */
+	position        : absolute;
+	left            :  15.75pt;
+	top             :  39.75pt;
+	width           : 370.50pt;
+	height          :  88.50pt;
+	}
+body#page           { /* Page Body */
+	background-color: #bcb494;
+	}
+
+
+
+/*--- EndOfFile ---*/

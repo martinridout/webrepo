@@ -1,0 +1,61 @@
+##---------------------------------------
+## This file provides all the data set in 
+## the two papers by Ridout and Morgan
+##---------------------------------------
+
+skinks = c(56, 19, 28, 18, 24, 14, 9)
+kskinks = 7
+
+housemice = c(2, 64, 40, 31, 16, 13, 5, 1, 0, 1)
+khousemice = 10
+
+pocketmice = c(16, 15, 6, 5, 5, 5, 3)
+kpocketmice = 7
+
+woodmice = c(71, 59, 41, 39, 20, 26, 19, 12, 9, 5, 8, 4, 
+              9, 2, 1, 3, 3, 3)
+kwoodmice = 21
+
+taxicabsA = c(142, 81, 49, 7, 3, 1)
+ktaxicabsA = 10
+
+taxicabsB = c(104, 67, 51, 12, 6, 1)
+ktaxicabsB = 10
+
+voles1 = c(29, 15, 15, 16, 27)
+kvoles1 = 5
+
+voles2 = c(18, 15, 8, 6, 5)
+kvoles2 = 5
+
+chipmunks = c(14, 13, 18, 12, 7, 5, 1, 1, 0, 1) 
+kchipmunks = 13
+
+hares = c(25, 22, 13, 5, 1, 2)
+khares = 6
+
+rabbits = c(43, 16, 8, 6, 0, 2, 1)
+krabbits = 18
+
+squirrels = c(23, 14, 9, 6, 8, 7, 3, 0, 2)
+ksquirrels = 11
+
+deermiceA = c(9, 9, 10, 8, 8, 7)
+kdeermiceA = 6
+
+deermiceB = c(34, 20, 28, 15, 13)
+kdeermiceB = 6
+
+golftees = c(46,28,21,13,23,14,6,11)
+kgolftees=8
+
+link1 = c(84, 54, 36, 21)
+klink1 = 4
+
+link2 = c(32, 20, 14, 11, 9, 8, 6)
+klink2 = 7
+
+link3 = c(679, 531, 379, 272, 198, 143, 99, 67, 46,
+          32, 22, 14, 9, 5, 3, 1, 0, 0, 0, 0)
+klink3 = 20
+
