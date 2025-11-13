@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; 
+   charset=utf-8" />
+  <meta name="featureription" content="Martin Ridout workplace" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Martin Ridout / Original design: Andreas
+   Viklund - http://andreasviklund.com/" />
+  <link rel="stylesheet" type="text/css" href="../../variant-winter.css"
+   media="screen,projection" title="Variant winter" />
+  <title>Martin Ridout workplace</title>
+</head>
+
+<body>
+<div id="container">
+  <div id="logo">
+  <h1>Martin Ridout</h1>
+  <h2>research pages</h2>
+</div>
+
+<div id="main">
+  <h2 class="hide">Site menu:</h2>
+  <ul id="navitab">
+	<li><a href="../../index.html">Home</a></li>
+	<li><a href="../research.html">Research</a></li>
+	<li><a class="current" href="../software.html">Software</a></li>
+	<li><a href="../public.html">Publications</a></li>
+	<li><a href="../recent.html">Recent</a></li>
+  </ul>
+
+        <!-- MAIN PAGE CONTENT -->
+
+<br><br><br>
+
+<h3>R functions for complex-step differentiation</h3>
+
+<p>
+The complex-step method is a clever way of obtaining a numerical
+approximation to the first derivative of a function, avoiding the
+round-off error that plagues standard first difference approximations [Ref 1].
+An extension of the method allows second derivatives to be calculated
+with reduced round-off error. [Ref 2] gives an overview of the method with statistical
+examples.
+<!--  is available <a href="deriv2.pdf">here</a>.  -->
+</p>
+
+<p>
+Here are the R programs for the examples in that article. The examples are
+all from the book by Brazzale, Davison and Reid [Ref 3].
+</p>
+<p>
+<a href="bdr23.R">bdr23.R</a>
+&nbsp;&nbsp;&nbsp;
+<a href="bdr35exp.R">bdr35exp.R</a>
+&nbsp;&nbsp;&nbsp;
+<a href="bdr35ln.R">bdr35ln.R</a>
+&nbsp;&nbsp;&nbsp;
+<a href="bdr43.R">bdr43.R</a>
+&nbsp;&nbsp;&nbsp;<br>
+<a href="bdr46.R">bdr46.R</a>
+&nbsp;&nbsp;&nbsp;
+<a href="bdr52.R">bdr52.R</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="bdr52t4.R">bdr52t4.R</a>
+&nbsp;&nbsp;&nbsp;
+<a href="bdr54.R">bdr54.R</a>
+</p>
+<p>
+You will also need the files 
+<a href="CStepDiff_functions.R">CStepDiff_functions.R</a> and 
+<a href="examples.R">examples.R</a>.
+</p>
+
+<p>
+Put all the files in a single directory and run R with this directory as the working directory.
+Typing
+<br>
+<tt>source("examples.R")</tt>
+<br>
+will generate the results in Table 3 of [Ref 2].
+</p>
+
+<p>
+Since [Ref 2] was written, I have had to make two changes to the code: 
+<ul>
+  <li>The original code used the function <tt>cgamma</tt> from package <tt>fOptions</tt> to evaluate
+      the gamma function for complex argument. The  <tt>fOptions</tt> package was subsequently
+      removed from CRAN. The code now uses the function <tt>complex_gamma</tt> from the <tt>hypergeo</tt>
+      package by <a href="https://www.stir.ac.uk/people/1966824">Robin Hankin</a>. 
+  </li>
+  <li>There appears to have been a change at some point in the way that R evaluates <tt>x^z</tt> when x=0 and
+      z is complex with Re(z)>0. Previously this returned <tt>0</tt>, now it returns <tt>NaN+NaNi</tt>. 
+      This affects BDR examples 4.6 and 5.4. I have modified the coding of the log-likelihood function for 
+      these examples so that the original behaviour is restored.</li>
+</ul>
+</p>
+
+
+<h3>References</h3>
+<p>
+<p>[1] Squire, W. and Trapp, G. (1998). Using complex variables to
+estimate derivatives of real functions. <i>SIAM Review</i>, <b>40</b>,
+110-112.
+[<a href="https://researchrepository.wvu.edu/faculty_publications/426/">Paper</a>]
+</p>
+
+<p>[2] Ridout M.S. (2009).
+Statistical applications of the complex-step method of numerical differentiation
+<i>American Statistician</i>, <b>63</b>, 66-74. 
+[<a href="https://www.tandfonline.com/doi/abs/10.1198/tast.2009.0013">Journal link</a>]
+
+<p>[3] Brazzale, A.R., Davison, A.C. and Reid, N. (2007). <i>Applied 
+Asymptotics: Case Studies in Small-Sample Statistics</i>, Cambridge: 
+Cambridge University Press. 
+</p>
+
+</div>
+
+<div id="sidebar">
+      <hr />
+  <br><br><br><br>
+      <hr />
+
+</div>
+
+<div id="footer">
+  <p>Page layout based on a template by <a
+     href="https://andreasviklund.com/about">Andreas Viklund</a></p>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; 
+   charset=utf-8" />
+  <meta name="featureription" content="Martin Ridout workplace" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Martin Ridout / Original design: Andreas
+   Viklund - http://andreasviklund.com/" />
+  <link rel="stylesheet" type="text/css" href="../../variant-winter.css"
+   media="screen,projection" title="Variant winter" />
+  <title>Martin Ridout workplace</title>
+</head>
+
+<body>
+<div id="container">
+  <div id="logo">
+  <h1>Martin Ridout</h1>
+  <h2>research pages</h2>
+</div>
+
+<div id="main">
+  <h2 class="hide">Site menu:</h2>
+  <ul id="navitab">
+	<li><a href="../../index.html">Home</a></li>
+	<li><a class="current" href="../research.html">Research</a></li>
+	<li><a href="../software.html">Software</a></li>
+	<li><a href="../public.html">Publications</a></li>
+	<li><a href="../recent.html">Recent</a></li>
+  </ul>
+
+        <!-- MAIN PAGE CONTENT -->
+
+<hr />
+<hr />
+<br><br>
+
+
+<h2>Disc coverings</h2>
+
+<p>
+Given a set of points in the plane, we seek a set of discs that cover
+all the points. The discs are allowed to overlap.
+Usually we wish to use as few discs as possible - this
+is the <b>minimal disc covering problem</b>.
+</p>
+
+<p>There are many variants of this problem. For example, the <b>Euclidean p-centre
+problem</b> fixes the number of discs and seeks the minimum disc radius that is
+needed to obtain a covering.  Or we can fix both the number and radius of the discs and
+seek to maximize the number of points that can be covered. Ref [1] gives a good 
+overview of the topic.
+</p>
+
+<p>
+The minimal disc covering problem is hard computationally (technically,
+strongly NP-complete). Various polynomial-time approximation schemes
+have been proposed. These are algorithms that run in polynomial time
+and guarantee to find a covering that requires no more than <i>q</i> times
+the true minimum number of discs, irrespective of the spatial distribution
+of the points. 
+However, it is hard to get <i>q</i> at all close to one whilst maintaining
+reasonable computational time. Ref [2] gives an algorithm with q=2.8334 that is 
+'almost linear' in the number of points, but no details of actual run times
+are given. Ref [3] gives a brief overview of algorithms of this type.
+</p>
+
+<h3>Heuristic randomised algorithms</h3>
+
+<p>
+I have developed some randomised algorithms that simply attempt to generate
+'reasonable' coverings. By running these algorithms multiple times and
+selecting the best solution, one can generally come close to a true minimal
+solution.
+</p>
+
+<p>
+The algorithms proceed sequentially by identifying points that have not yet
+been covered a finding a disc that covers the point identified. The greedy
+approach of always selecting the disc that covers as many of the remaining
+points as possible can give poor results. Instead, we pick points randomly.
+Once a point is identified, there are different ways of finding a covering
+disc, giving rise to different variants of the basic algorithm. These are
+described in Ref [3].
+</p>
+
+<p>
+Unlike the polynomial time schemes, this approach gives no guarantees about
+the quality of the solution. However, the algorithms seem to perform quite 
+well in practice. Two advantages are that
+<ul>
+<li>the algorithms are reasonably simple to program</li>
+<!--
+ and <a href="rcode.html">R code</a> is available;</li>
+-->
+<li>the computational effort can be varied (by setting the number of 
+repetitions) depending on how important it is to find an accurate
+solution.
+</li>
+</ul>
+
+
+<h3>Applications</h3>
+
+<p>
+A classical application is to <b>facility location</b>. Here the points represent
+populations and we wish to locate facilities (schools, hospitals, etc) so that
+the distance from each population to its nearest facility is no more than <i>r</i>;
+this is achieved if the facilities are placed at the centres of the discs. More
+recent applications are to wireless networks.
+</p>
+<p>
+My own interest arose in connection with a problem in ecology. The minimal disc
+problem provides a solution to the following problem. Suppose we have a set of 
+animal marks (eg footprints) where it is impossible to identify individual animals
+(i.e. we cannot say whether or not two marks were made by the same animal). 
+Suppose that individual animals move within circular areas (home ranges) of
+specified radius. What is the minimum number of animals that could have made the
+marks?
+Ref [3] gives an application to pugmarks made by the Sumatran tiger. 
+</p>
+
+
+
+<br>
+<h3>References</h3>
+<p>
+<p>[1] 
+Agarwal, P.K. and Sharir, M. (1998) Efficient algorithms for geometric optimiization.
+<I>ACM Computing Surveys</i>, <b>30</b>, 412-48.
+
+<p>[2]
+Fu, B., Chen, Z. and Abdelguerfi, M. (2007)
+An almost linear time 2.8334-approximation algorithm for the disc covering
+problem.
+In <i>Algorithmic Aspects in Information and Management:
+Lecture Notes in Computer Science, Vol. 4508</i>, pp. 317-326.
+
+<p>[3]
+Ridout, M.S. 
+(2012)
+Application of minimal disc covering to the analysis of wildlife signs.
+[<a href="circles_manuscript.pdf">pdf</a>]
+
+</div>
+
+<div id="sidebar">
+<br><br><br><br>
+<br>
+	<img src="covering2.gif" class="aligncenter" width="260"
+       height="260" alt="Points covered by discs" />
+<p>
+80 randomly distributed points on the unit square
+covered by 22 discs each of radius 0.1.
+</p>
+</div>
+
+<div id="footer">
+  <p>Page layout based on a template by <a
+     href="https://andreasviklund.com/about">Andreas Viklund</a></p>
+</div>
+</body>
+</html>

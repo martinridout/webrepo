@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; 
+   charset=utf-8" />
+  <meta name="featureription" content="Martin Ridout workplace" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Martin Ridout / Original design: Andreas
+   Viklund - http://andreasviklund.com/" />
+  <link rel="stylesheet" type="text/css" href="../../variant-winter.css"
+   media="screen,projection" title="Variant winter" />
+  <title>Martin Ridout workplace</title>
+</head>
+
+<body>
+<div id="container">
+  <div id="logo">
+  <h1>Martin Ridout</h1>
+  <h2>research pages</h2>
+</div>
+
+<div id="main">
+  <h2 class="hide">Site menu:</h2>
+  <ul id="navitab">
+	<li><a href="../../index.html">Home</a></li>
+	<li><a href="../research.html">Research</a></li>
+	<li><a class="current" href="../software.html">Software</a></li>
+	<li><a href="../public.html">Publications</a></li>
+	<li><a href="../recent.html">Recent</a></li>
+  </ul>
+
+        <!-- MAIN PAGE CONTENT -->
+
+<hr />
+<br><br>
+
+<h3>SODA: A software tool to assist in the design of single-season occupancy studies
+</h3>
+
+<p>
+SODA is a tool developed to assist in the design of single-season occupancy
+studies. It provides automated searches for suitable designs and can evaluate
+the properties of specified designs. A key feature of SODA is that it uses
+simulation to investigate the small sample properties of maximum likelihood
+estimators, rather than relying on asymptotic approximations. The methodology
+is described in Ref [1] below.
+</p>
+
+<p>
+SODA is written in Matlab and is currently available only for Microsoft Windows. 
+For R users, we have provided a separate 
+<a href="occdesign1sp.R">R function</a>
+that simulates the basic single
+species occupancy model with given parameter values, assuming a given number of sampling
+sites and visits per site, and displays the results in tabular form and graphically. 
+Comments at the start of the function explain usage. This function can be used to compare
+different designs 'manually', to mimic the automatic searches in the Matlab version.
+</p>
+
+<p>
+SODA was written by 
+<a href="https://gguilleraresearch.wordpress.com/about-me/">Gurutzeta Guillera-Arroita</a>, as part of her PhD in the 
+Statistics group at Kent, supervised by 
+<a href="https://www.kent.ac.uk/mathematics-statistics-actuarial-science/people/1127/morgan-byron">Byron Morgan</a>
+and myself.
+</p>
+
+<h4>Downloading the software</h4><br>
+<p>
+For the Matlab version, you should start by reading the
+<a href="Help_SODA.pdf">user guide</a>. The files that you
+need to download depend on whether or not you have Matlab on your machine.
+</p>
+<ul>
+<li>
+<h4>If you have Matlab installed on your machine</h4>
+<p>
+The files you need are in this
+<a href="SODA_v0_matlab_files.zip">zip file</a>.
+</p>
+
+</li>
+<li>
+<h4>If you DO NOT have Matlab installed on your machine</h4>
+
+<p>
+The files you need are in this
+<a href="SODA_v0_files.zip">zip file</a>.
+However, you will also need to download and install the
+<a href="https://uk.mathworks.com/products/compiler/matlab-runtime.html">
+Matlab Compiler Runtime (MCR)</a> tool, unless you already have
+the correct version (7.10) installed on your machine. Please consult these
+<a href="readme.txt">detailed instructions</a> about what you
+need to do.
+For general information about this tool
+see this <a href=https://uk.mathworks.com/help/compiler/index.html>Matlab webpage</a>.
+
+</li>
+</ul>
+</p>
+
+
+<h4>Reference</h4>
+<p>
+<p>[1] Guillera-Arroita, G., Ridout, M.S. and Morgan, B.J.T. (2010)
+Occupancy studies with imperfect detection: considerations for
+study design.
+<i>Methods in Ecology and Evolution</i>, <b>1</b>, 131-139.  
+[<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2010.00017.x/pdf">Paper</a>]
+</p>
+
+
+</div>
+
+<div id="sidebar">
+
+      <br>
+      <hr />
+
+</div>
+</div>
+
+<div id="footer">
+  <p>Page layout based on a template by <a
+     href="https://andreasviklund.com/about">Andreas Viklund</a></p>
+</div>
+</body>
+</html>

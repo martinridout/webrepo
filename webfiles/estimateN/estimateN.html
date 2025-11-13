@@ -1,84 +1,93 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Estimate closed population size</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="Optimizacija Spletnih Strani - Slovenski Webmaster Blog" /><meta name="keywords" content="optimizacija spletnih strani, izdelava spletnih strani, mark" />	
-<link rel="stylesheet" type="text/css" href="../../dark.css" media="screen" />
+  <meta http-equiv="content-type" content="text/html; 
+   charset=utf-8" />
+  <meta name="featureription" content="Martin Ridout workplace" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Martin Ridout / Original design: Andreas
+   Viklund - http://andreasviklund.com/" />
+  <link rel="stylesheet" type="text/css" href="../../variant-winter.css"
+   media="screen,projection" title="Variant winter" />
+  <title>Martin Ridout workplace</title>
 </head>
+
 <body>
-
-<div id="wrap">
-
-<div id="header">
-<h1><a href="http://www.">Martin Ridout</a></h1>
-<h2>Work pages</h2>
+<div id="container">
+  <div id="logo">
+  <h1>Martin Ridout</h1>
+  <h2>research pages</h2>
 </div>
 
-<div id="topmenu">
-<a href="../../index.htm">Home</a> | 
-<a href="../teach.html">Teaching</a> | 
-<a href="../research.html">Research</a> | 
-<a href="../software.html">Software</a> |
-<a href="../publication.html">Publications</a> |
-<a href="../editor.html">Editorial work</a> |
-<a href="../contact.html">Contact</a> 
-</div>
+<div id="main">
+  <h2 class="hide">Site menu:</h2>
+  <ul id="navitab">
+	<li><a href="../../index.html">Home</a></li>
+	<li><a href="../research.html">Research</a></li>
+	<li><a class="current" href="../software.html">Software</a></li>
+	<li><a href="../public.html">Publications</a></li>
+	<li><a href="../recent.html">Recent</a></li>
+  </ul>
 
-<div id="right">
+        <!-- MAIN PAGE CONTENT -->
+
+<br><br><br>
 
 <h3>Estimating closed population size from capture-recapture data</h3>
 
 <p>
-This page provides R functions that can be downloaded to fit some
+This page provides R functions to fit some
 models of capture heterogeneity to estimate <i>N</i>, the size of a
-closed population, from capture-recapture data. This is joint work
-with <a href="http://www.kent.ac.uk/ims/people/bjtm/index.htm">Byron Morgan</a>.
+closed population, from capture-recapture data. This is joint work with
+<a href="https://www.kent.ac.uk/mathematics-statistics-actuarial-science/people/1127/morgan-byron">Byron Morgan</a>.
 </p>
 
 <p>
 In the most general
-model, captures are modelled as a mixture of binomial and beta-binomial
+model that we consider, captures are modelled as a mixture of binomial and beta-binomial
 counts. This generalises the beta-binomial model considered, for example,
 by Dorazio and Royle [Ref 1] and the (two-component form of) finite mixture
 model considered, for example, by Pledger [Ref 2]. Our new model is 
-described in Refs [3] and [4] below, which also provide other references
-to the existing literature.
+described in Refs [3] and [4] below, which give further references.
 </p>
 
 <p>
 There are important issues of identifiability in models of capture
-heterogeneity, see for example [Ref 5]. Our model does not, of course, resolve these
+heterogeneity, see for example [Ref 5]. Our model does not resolve these
 problems, but it does offer a broad and flexible class of models within which
 to investigate and compare estimates of <i>N</i>.
 </p>
 
 <p>
-A <a href="estimateN.pdf">user guide</a> provides information about
-the software - how to use it and some details about computational methods.
+A <a href="estimateN.pdf">user guide</a> explains how to use the
+software and gives details about computational methods.
 
-To use the software, you will need to download the file
-<a href="estimateN.r">estimateN.r</a> into a suitable directory
+You need to download the file
+<a href="estimateN.R">estimateN.R</a> into a suitable directory
 on your computer. This contains all the functions needed to fit
-the models. Ordinarily, you should not need to look at the R code in this
-file unless
-you want to see the details of what's going on.
-</p><p>Here are a couple of example files that illustrate the use of the 
+the models. You don't need to look at this code unless you want to see the details of what's going on. 
+<!-- The code should work in R 2.6.1 onwards. -->
+
+
+</p><p>These files illustrate the use of the 
 software:
 </p>
 <p>
-<a href="example1.r">example1.r</a>
+<a href="example1.R">example1.R</a>
 &nbsp;&nbsp;&nbsp;
-<a href="example2.r">example2.r</a>
+<a href="example2.R">example2.R</a>
 </p>
 <p>All the data sets used in Refs [3] and [4] are in 
 <a href="alldata.txt">this file</a>.
 </p>
 
-<h3>References</h3>
+<h4>References</h4>
 <p>
 <p>[1] Dorazio, R.M. and Royle, J.A. (2003). Mixture 
 models for estimating the size
 of a closed population when capture rates vary among individuals.
 <i>Biometrics</i>, <b>59</b>, 351-364.
+[<a href="https://academic.oup.com/biometrics/article-abstract/59/2/351/7286171">journal link</a>]
 </p>
 
 
@@ -86,41 +95,48 @@ of a closed population when capture rates vary among individuals.
 for closed capture-recapture
 models using mixtures.
 <i>Biometrics</i>, <b>56</b>, 434-442.
+[<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0006-341X.2000.00434.x">journal link</a>]
 </p>
 
-<p>[3] Morgan, B.J.T. and Ridout, M.S. (2007). A new mixture model for 
-capture heterogeneity. <i>Applied Statistics</i>, to appear.
+<p>[3]
+Morgan, B.J.T. and Ridout, M.S. (2008)
+A new mixture model for capture heterogeneity.
+<i>Applied Statistics</i>, <b>57</b>, 433-446.
+[<a href="https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9876.2008.00620.x">journal link</a>]
 </p>
 
-<p>[4] 
-Morgan, B.J.T. and Ridout, M.S. (2007). Estimating <i>N</i>: a robust approach to capture
-heterogeneity. <i>under revision</i>
+<p>[4]
+Morgan, B.J.T. and Ridout, M.S. (2008) Estimating N: a robust approach to 
+capture heterogeneity. In: Thomson, D.L. and Cooch, E.G. and Conroy, M.J., eds. 
+Modelling Demographic Processes in Marked Populations. <i>Environmental and Ecological Statistics</i>.
+Springer, New York, pp. 1069-1080. ISBN 978-0-387-78150-1. 
+[<a href="https://link.springer.com/chapter/10.1007/978-0-387-78151-8_49">chapter link</a>]
 </p>
 
 <p>[5] 
 Link, W.A. (2003). Nonindentifiability of population size from capture-recapture data with
 heterogeneous detection probabilities.
-<i>Biometrics</i>, <b>59</b>, 1123-1130.</p>
-
-
-
-
-
-<br><br><p STYLE="font-size:smaller">
-This page last modified 3 August 2007.
+<i>Biometrics</i>, <b>59</b>, 1123-1130.
+[<a href="https://academic.oup.com/biometrics/article-abstract/59/4/1123/7288615">journal link</a>]
 </p>
 </div>
 
-<div id="left">
-<!--<ul>
-<li><a href="http://www.smileyicon.net">Smiley Icons</a></li>
-</ul>-->
-<img vspace=10 height=200 width=144 src="../esquisse-transparent.gif"/>
-<div style="background: #222; text-align: center; margin-top: 15px; color: #eee; height: 30px; line-height: 30px;">
-Design by <a href="http://www.minimalistic-design.net">Minimalistic Design</a> 
-</div>
+<div id="sidebar">
+      <hr /><br><br><br><br>
+      <p>
+      The skink data used in the example R files on this page are counts of the Canterbury spotted skink
+      (<i>Oligosoma lineoocellatum</i>). <br>
+      <img src="CanterburySpottedSkink.jpg" class="aligncenter" width="220"
+       height="164" alt="Picture of Canterbury Spotted Skink" />
+      This public domain image is by 
+      <a href="https://www.inaturalist.org/photos/337783276">Carey Knox</a>
+      </p>
+
 </div>
 
+<div id="footer">
+  <p>Page layout based on a template by <a
+     href="https://andreasviklund.com/about">Andreas Viklund</a></p>
 </div>
 </body>
 </html>

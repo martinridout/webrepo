@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; 
+   charset=utf-8" />
+  <meta name="featureription" content="Martin Ridout workplace" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Martin Ridout / Original design: Andreas
+   Viklund - http://andreasviklund.com/" />
+  <link rel="stylesheet" type="text/css" href="../../variant-winter.css"
+   media="screen,projection" title="Variant winter" />
+  <title>Martin Ridout workplace</title>
+</head>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; 
+   charset=utf-8" />
+  <meta name="featureription" content="Martin Ridout workplace links" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Martin Ridout / Original design: Andreas
+   Viklund - http://andreasviklund.com/" />
+  <link rel="stylesheet" type="text/css" href="../../variant-winter.css"
+   media="screen,projection" title="Variant winter" />
+  <title>Martin Ridout workplace links</title>
+</head>
+
+
+
+<body>
+<div id="container">
+  <div id="logo">
+  <h1>Martin Ridout</h1>
+  <h2>research pages</h2>
+</div>
+
+<div id="main">
+  <h2 class="hide">Site menu:</h2>
+  <ul id="navitab">
+	<li><a href="../../index.html">Home</a></li>
+	<li><a class="current" href="../research.html">Research</a></li>
+	<li><a href="../software.html">Software</a></li>
+	<li><a href="../public.html">Publications</a></li>
+	<li><a href="../recent.html">Recent</a></li>
+  </ul>
+
+        <!-- MAIN PAGE CONTENT -->
+
+<br><br><br>
+
+<h3>Estimating overlap of activity patterns
+</h3>
+
+<p> 
+In Ref [2] <a href="https://scholar.google.com/citations?user=eq5SM5kAAAAJ&hl=en">Matt Linkie</a> 
+and I looked at overlap of activity patterns of the Sumatran tiger (below) with 
+several of its prey species, using statistical methodology outlined in [Ref 1]
+The data consist of times of day of photographs of different species, from
+camera trap records. These data are used to estimate the activity pattern 
+of each species over the day (as a probability density function) and then,
+for a given pair of species, the degree of overlap between the two estimated 
+densities can be estimated, using methods from [Ref 5].
+</p>
+
+<p>
+The figure on the right shows the overlap between tiger and muntjac, which was the
+species that showed the greatest degree of overlap - estimated as 0.80, with a 95%
+confidence interval (0.71, 0.84) [Ref 2]. 
+The red and blue lines are the estimated activity patterns of each species and the
+overlap is calculated as the area of the grey shaded region. 
+</p>
+
+<!-- 
+<p>
+The statistical methodology is described in [Ref 1] and [Ref 2] below. 
+The data consist of times of day of photographs of different species, from
+camera trap records. These
+data are used to estimate the activity pattern of each species over the day (as a probability 
+density function) and then, for a given pair of species, the 
+degree of overlap between the two estimated densities can be estimated.
+</p>
+-->
+
+<h4>Statistical method</h4><br>
+<p>
+In statistical terminology, time of day records
+are an example of <i>circular data</i>. 
+Activity patterns are obtained either by kernel density estimation
+or by fitting a flexible parametric family of circular distributions called
+trigonometric sum distributions [Ref 3]. These two approaches usually give very similar
+results and only the more flexible kernel density estimation is implemented in the software
+described below.
+</p>
+<p>
+The measure of overlap used is the <i>coefficient of overlapping</i> [Ref 4], 
+which is the area under the 
+curve that is formed by taking
+the minimum of the two density functions at each time point. 
+This is denoted by &Delta; in the papers and can range
+from 0 (no overlap, e.g. one species entirely diurnal, the other entirely 
+nocturnal) to 1 (complete overlap, identical activity patterns). A useful
+interpretation is that for any time period during the day, the proportion
+of activity that occurs during that period differs between the two species
+by less than 1-&Delta;. 
+</p>
+
+<p>
+<a href="overlap_software.html">R software</a> is available.
+</p>
+<br>
+
+
+<br>
+<h3>References</h3>
+<p>
+<p>[1] Ridout, M.S. & Linkie, M. (2009) Estimating overlap of
+daily activity patterns from camera trap data. 
+<i>Journal of Agricultural, Biological and Environmental Statistics</i>, 
+<b>14</b>, 322-337.
+[<a href="https://link.springer.com/article/10.1198/jabes.2009.08038">journal link</a>]
+</p>
+
+<p>[2] Linkie, M. & Ridout, M.S. (2011) 
+Assessing tiger-prey interactions in Sumatran rainforests.
+<i>Journal of Zoology</i>, <b>284</b>, 224-229.
+[<a href="https://zslpublications.onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-7998.2011.00801.x">pdf</a>]
+</p>
+
+<p>[3] Fernandez-Duran, J.J. (2004) 
+Circular distributions based on non-negative trigonometric sums.
+<i>Biometrics</i>, <b>60</b>, 499-503.
+[<a href="https://academic.oup.com/biometrics/article-abstract/60/2/499/7240822?redirectedFrom=fulltext">journal link</a>]
+
+<p>[4] Weitzman, M.S. (1970) 
+Measures of overlap of income distributions of white and negro 
+families in the United States. Technical Report 22, US Department of Commerce,
+Bureau of the Census, Washington DC.
+</p>
+
+<p>
+[5] Schmid & Schmidt (2006) 
+Nonparametric estimation of the coefficient of overlapping - theory and
+empirical application.
+<i>Computational Statistics and Data Analysis</i>, <b>50</b>, 1583-1596.
+[<a href="https://www.sciencedirect.com/science/article/abs/pii/S0167947305000290">journal link</a>]
+</div>
+
+<div id="sidebar">
+<br><br><br><br>
+
+	<img src="tigermuntjac.jpg" class="aligncenter" width="270"
+       height="238" alt="Tiger and mntjac activity patterns" />
+<p>
+The red and blue marks at the bottom of the plot, which can be seen more clearly in a larger plot,
+show the times at which each species was obsered.
+</p> 
+
+<br><br><br>
+<p>
+	<img src="tiger.jpg" class="aligncenter" width="160"
+       height="120" alt="Sumatran tiger" />
+<p>
+A Sumatran tiger caught by a camera trap.
+</p>
+</div>
+
+<div id="footer">
+  <p>Page layout based on a template by <a
+     href="https://andreasviklund.com/about">Andreas Viklund</a></p>
+</div>
+</body>
+</html>

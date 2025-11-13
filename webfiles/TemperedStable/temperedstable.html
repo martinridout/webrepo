@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; 
+   charset=utf-8" />
+  <meta name="featureription" content="Martin Ridout workplace" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Martin Ridout / Original design: Andreas
+   Viklund - http://andreasviklund.com/" />
+  <link rel="stylesheet" type="text/css" href="../../variant-winter.css"
+   media="screen,projection" title="Variant winter" />
+  <title>Martin Ridout workplace</title>
+</head>
+
+<body>
+<div id="container">
+  <div id="logo">
+  <h1>Martin Ridout</h1>
+  <h2>research pages</h2>
+</div>
+
+<div id="main">
+  <h2 class="hide">Site menu:</h2>
+  <ul id="navitab">
+	<li><a href="../../index.html">Home</a></li>
+	<li><a href="../research.html">Research</a></li>
+	<li><a class="current" href="../software.html">Software</a></li>
+	<li><a href="../public.html">Publications</a></li>
+	<li><a href="../recent.html">Recent</a></li>
+  </ul>
+
+        <!-- MAIN PAGE CONTENT -->
+
+<br><br><br>
+
+<h3>R functions for the tempered stable distribution</h3>
+
+<p>
+This page provides R functions for the tempered stable distribution
+[Ref 1] using the parametrisation and numerical methods described
+by [Ref 2]. These programs were mostly written by Karen Palmer, who
+completed her PhD on <i>Stochastic Models for Cell Biology</i> at Kent in 2009, supervised by
+<a href="https://www.kent.ac.uk/mathematics-statistics-actuarial-science/people/1127/morgan-byron">Byron Morgan</a>.
+and myself.
+</p>
+
+<p>
+The functions available are:
+</p>
+<tt>
+&nbsp; &nbsp; &nbsp; dts(x, param)  <br>
+&nbsp; &nbsp; &nbsp; pts(x, param)  <br>
+&nbsp; &nbsp; &nbsp; qts(x, param, lower = 1/10000, upper = 10000) <br>
+&nbsp; &nbsp; &nbsp; rts(n, param) <br>
+</tt>
+<br>
+
+<p>
+These provide, respectively, the probability density function, the
+cumulative distribution function, the quantile function and a random
+number generator. For the quantile function, <tt>lower</tt> and <tt>upper</tt> should be
+set to values below and above the true quantile; the default values
+will suffice for most examples. 
+</p>
+
+<p>
+The argument <tt>param</tt> is a vector of length 3, giving the mean, coefficient of 
+variation, and further parameter <tt>alpha</tt> (<tt>0 < alpha < 1</tt>) of the 
+distribution. For details on this parametrisation, see [Ref 2].
+The gamma distribution is the limiting
+distribution as <tt>alpha</tt> tends to zero and <tt>alpha = 1/2</tt> gives 
+the inverse Gaussian distribution. 
+</p>
+
+<p>
+These functions rely on numerical inversion of the Laplace 
+transform of the p.d.f. or c.d.f. of the tempered stable
+distribution, using the method described in [Ref 3]. 
+Generally this gives very accurate results, except sometimes
+in the extreme tails of the distribution, where the rescaling method
+outlined in [Ref 4] can give substantially improved accuracy. 
+For further discussion of accuracy and of alternative numerical 
+approaches, see [Ref 2].
+</p>
+
+<p>
+To use the software, you will need to download the file
+<a href="TSfunctions.R">TSfunctions.R</a> into a suitable directory
+on your computer. This contains the functions listed above and various
+supporting functions. You should not need to look at the R code in this
+file unless you want to see the details of what's going on.
+The file 
+<a href="TSscript.R">TSscript.R</a> gives examples
+of usage.
+</p>
+
+<br>
+<h3>References</h3>
+<p>
+<p>[1] Hougaard, P. (1986). Survival models for heterogeneous populations
+derived from stable distributions.
+<i>Biometrika</i>, <b>73</b>, 387-396.
+[<a HREF="https://academic.oup.com/biomet/article-abstract/73/2/387/338958">journal link</a>]
+</p>
+
+
+https://academic.oup.com/biomet/article-abstract/73/2/387/338958
+
+<p>[2] Palmer, K.J., Ridout, M.S. and Morgan, B.J.T. (2008). 
+Modelling cell generation times using the tempered
+stable distribution. 
+<i>Journal of the Royal Statistical Society Series C</i>, <b>57</b>, 379-397. 
+[<a HREF="https://doi.org/10.1111/j.1467-9876.2008.00625.x">journal link</a>]
+</p>
+
+<p>[3] Abate, J., Choudhury, G.L. and Whitt, W. (1999).
+An introduction to numerical transform inversion and its
+application to probability models. In <i>Computational
+Probability</i> (ed. W. Grassmann), pp. 257-323. Boston: Kluwer.
+</p>
+
+<p>[4] 
+Choudhury, G.L. and Whitt, W. (1997). Probabilistic scaling for the
+numerical inversion of nonprobability transforms. <i>INFORMS Journal
+on Computing</i>, <b>9</b>, 175-184.
+[<a HREF="https://pubsonline.informs.org/doi/10.1287/ijoc.9.2.175">journal link</a>]
+</p>
+
+</div>
+
+<div id="sidebar">
+
+
+   <hr />  <hr />     <hr />  <hr /> 
+   <hr />  <hr />     <hr />  <hr /> 
+
+  <br><br>
+  <hr />
+  <img src="pdf.gif" class="aligncenter" width="260"
+   height="241" alt="Tempered stable pdf" />
+
+<p>Examples of the probability density function of the
+tempered stable distribution. All three distributions have 
+mean 4 and coefficient of variation 0.5.
+They differ in the value of the parameter <tt>alpha</tt>:
+<ul><li>
+red curve: <tt>alpha = 0</tt> (gamma distribution)
+</li>
+<li>black dashed curve: <tt>alpha = 0.5</tt> (inverse Gaussian
+distribution)
+</li>
+<li>blue curve: <tt>alpha = 0.8</tt>
+</li>
+</ul>
+
+</div>
+
+
+<div id="footer">
+  <p>Page layout based on a template by <a
+     href="https://andreasviklund.com/about">Andreas Viklund</a></p>
+</div>
+</body>
+</html>
