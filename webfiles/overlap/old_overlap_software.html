@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; 
+   charset=utf-8" />
+  <meta name="featureription" content="Martin Ridout workplace" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Martin Ridout / Original design: Andreas
+   Viklund - http://andreasviklund.com/" />
+  <link rel="stylesheet" type="text/css" href="../../variant-winter.css"
+   media="screen,projection" title="Variant winter" />
+  <title>Martin Ridout workplace</title>
+</head>
+
+<body>
+<div id="container">
+  <div id="logo">
+  <h1>Martin Ridout</h1>
+  <h2>research pages</h2>
+</div>
+
+<div id="main">
+  <h2 class="hide">Site menu:</h2>
+  <ul id="navitab">
+	<li><a href="../../index.html">Home</a></li>
+	<li><a href="../research.html">Research</a></li>
+	<li><a class="current" href="../software.html">Software</a></li>
+	<li><a href="../public.html">Publications</a></li>
+	<li><a href="../recent.html">Recent</a></li>
+  </ul>
+
+        <!-- MAIN PAGE CONTENT -->
+
+<br><br><br>
+
+<h3>Original R software for estimating overlap of activity patterns
+</h3>
+<br>
+<p>
+This software was used in preparing Refs [1 and 2], but 
+<b>it is now superceded by the <a href="overlap_software.html">overlap package</a></b>.
+</p>
+
+<p>
+The data from [Ref 2] are in file 
+<a href="traptimes.txt">traptimes.txt</a>. The file
+<a href="setup.R">setup.R</a> reads the data into R
+and also imports a set of functions that are used in the 
+analyses (these functions are in the file 
+<a href="ovlcode.R">ovlcode.R</a>).
+</p>
+<p>
+The file 
+<a href="example.R">example.R</a> provides simple
+examples of how to estimate overlap, including a bootstrap confidence
+interval. To run the example (which should take less than a minute on a 
+modern PC), follow these steps:<br>
+<ul>
+<li>
+copy ALL the R files and the data file into a directory on your computer
+</li>
+<li>
+start R and click on File|Change dir... to select the directory where you stored the files
+</li>
+<li>
+Install the CRAN package <tt>circular</tt> if it is not already installed. ...
+<li>
+At the R prompt (> ) type <br>
+<tt>&nbsp; &nbsp source("example.R")</tt>
+</li>
+</ul>
+<p>
+The files 
+<a href="figure1.R">figure1.R</a> and
+<a href="figure2.R">figure2.R</a> produce the two
+figures in ref [2]. These files are included for the benefit of 
+anyone interested in producing similar graphs, but they are not
+extensively commented.
+
+<br>
+<h3>References</h3>
+<p>
+<p>[1] Ridout, M.S. & Linkie, M. (2009) Estimating overlap of
+daily activity patterns from camera trap data. 
+<i>Journal of Agricultural, Biological and Environmental Statistics</i>, 
+<b>14</b>, 322-337.
+[<a href="https://link.springer.com/article/10.1198/jabes.2009.08038">journal link</a>]
+</p>
+
+<p>[2] Linkie, M. & Ridout, M.S. (2011) 
+Assessing tiger-prey interactions in Sumatran rainforests.
+<i>Journal of Zoology</i>, <b>284</b>, 224-229.
+[<a href="https://zslpublications.onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-7998.2011.00801.x">pdf</a>]
+</p>
+</div>
+
+<div id="sidebar">
+</div>
+
+<div id="footer">
+  <p>Page layout based on a template by <a
+     href="https://andreasviklund.com/about">Andreas Viklund</a></p>
+</div>
+</body>
+</html>
